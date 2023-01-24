@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Caramel&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+header {
+  background-color: #3a3838;
+  width: 100%;
+  position: fixed;
+  z-index: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+.logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(199, 103, 68);
+  font-weight: 700;
+  font-size: 1.8em;
+}
+.navbar a {
+  color: rgb(199, 103, 68);
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-left: 30px;
+}
+.navbar a:hover {
+  color: rgb(172, 60, 20);
+}
+
+section {
+  width: 100%;
+  background-color: #e1e3e4f6;
+}
+.main {
+  width: 80%;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left {
+  line-height: 2;
+  width: 50%;
+}
+span {
+  color: rgb(199, 103, 68);
+  font-size: 1.8em;
+}
+.mainButton {
+  display: inline-block;
+  margin: 20px 0px;
+  text-decoration: none;
+  padding: 0.9875em 2.187em;
+  background-color: rgb(199, 103, 68);
+  border-radius: 10px;
+  letter-spacing: 1px;
+  color: black;
+  transition: 0.6s ease;
+}
+.mainButton:hover {
+  background-color: rgb(172, 60, 20);
+  transform: scale(1.1);
+}
+.right {
+  width: 50%;
+  height: 90vh;
+  background-image: url(../images/bg.jpeg);
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+.socialIcons {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+.fa-brands {
+  color: black;
+  font-size: 1.7em;
+}
+.fa-solid {
+  font-size: 1.7em;
+  color: rgb(199, 103, 68);
+}
+.cards {
+  width: 80%;
+  margin: auto;
+}
+.title {
+  text-align: center;
+  margin: 5% 0px;
+  font-weight: 700;
+  font-size: 2.5em;
+}
+.content {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  width: 30%;
+  border: 1px solid rgb(212, 206, 206);
+  height: 60vh;
+  border-radius: 15px;
+  transition: 0.7s ease;
+  box-shadow: 2px 5px 5px 10px rgb(243, 236, 236);
+}
+/* .card:hover {
+  transform: scale(1.1);
+  box-shadow: #4185a7f6;
+}
+.data {
+  text-align: center;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  padding: 15% 0px;
+}
+.fa-sharp {
+  font-size: 6em;
+}
+.info {
+  color: rgb(199, 103, 68);
+} */
