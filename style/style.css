@@ -34,101 +34,204 @@ header {
 .navbar a:hover {
   color: rgb(172, 60, 20);
 }
-
-section {
-  width: 100%;
-  background-color: #e1e3e4f6;
+section{
+  padding: 100px;
 }
-.main {
-  width: 80%;
-  margin: auto;
+.main{
+  width: 100%;
   min-height: 100vh;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  background-color: #f1e9e9;
 }
-.left {
-  line-height: 2;
-  width: 50%;
+.mainContent{
+  width: 60%;
 }
-span {
-  color: rgb(199, 103, 68);
-  font-size: 1.8em;
-}
-.mainButton {
+.position{
   display: inline-block;
-  margin: 20px 0px;
-  text-decoration: none;
-  padding: 0.9875em 2.187em;
-  background-color: rgb(199, 103, 68);
-  border-radius: 10px;
-  letter-spacing: 1px;
-  color: black;
-  transition: 0.6s ease;
-}
-.mainButton:hover {
-  background-color: rgb(172, 60, 20);
-  transform: scale(1.1);
-}
-.right {
-  width: 50%;
-  height: 90vh;
-  background-image: url(../images/bg.jpeg);
-  background-position: center right;
-  background-repeat: no-repeat;
-}
-.socialIcons {
-  display: flex;
-  width: 30%;
-  justify-content: space-between;
-}
-.fa-brands {
-  color: black;
-  font-size: 1.7em;
-}
-.fa-solid {
-  font-size: 1.7em;
   color: rgb(199, 103, 68);
+  font-weight: 700;
+  font-size: 60px;
+  margin: 10px 0 10px 0;
 }
+.mainButton{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border: 1px solid rgb(199, 103, 68);
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(199, 103, 68);
+  transition: .7s ease;
+  letter-spacing: 1px;
+}
+.mainButton:hover{
+  transform: scale(1.1);
+  opacity: .9;
+}
+.socialIcons{
+  width: 19%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.socialIcons a{
+  color: rgb(199, 103, 68);
+  font-size: 1.5em;
+}
+
 .cards {
-  width: 80%;
-  margin: auto;
+  width: 100%;
+  min-height: 90vh;
 }
 .title {
   text-align: center;
-  margin: 5% 0px;
   font-weight: 700;
   font-size: 2.5em;
+  color: rgb(199, 103, 68);
+  margin-bottom: 30px;
 }
-.content {
-  border: 1px solid red;
+.cardsContent{
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
+
 }
-.card {
-  width: 30%;
-  border: 1px solid rgb(212, 206, 206);
-  height: 60vh;
-  border-radius: 15px;
-  transition: 0.7s ease;
-  box-shadow: 2px 5px 5px 10px rgb(243, 236, 236);
-}
-/* .card:hover {
-  transform: scale(1.1);
-  box-shadow: #4185a7f6;
-}
-.data {
+
+.card{
+  width: 32%;
   text-align: center;
+  padding: 2%;
+  border: 2px solid rgb(54, 53, 53);
+  border-radius: 15px;
+  box-shadow: 0px 10px 25px rgba(1 1 1/20%);
+  transition: 0.7s ease;
 }
+.card:hover {
+  transform: scale(1.1);
+}
+
 .icon {
-  display: flex;
-  justify-content: center;
-  padding: 15% 0px;
-}
-.fa-sharp {
-  font-size: 6em;
+  font-size: 4rem;
+  color: rgb(199, 103, 68);
 }
 .info {
+  margin: 10px 0px;
+}
+.info h2{
   color: rgb(199, 103, 68);
-} */
+}
+@media only screen and (max-width: 768px) {
+  .cardsContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+  }
+  .card {
+    width: 46%;
+    margin: 2%
+  }
+}
+@media only screen and (max-width: 500px) {
+  .cardsContent {
+    width: 100%;
+    display: flex;
+    margin-bottom: 5%;
+  }
+  .card {
+    width: 100%;
+  } 
+}
+
+
+
+/* card one more */
+ .projects{
+  background-color: #f1e9e9;
+}
+.projects .content{
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.projectCard{
+  background-color: #fff;
+  border: 1px solid black;
+  min-height: 14em;
+  border-radius: 15px;
+  width: 30%;
+  overflow: hidden;
+  transition: .7s ease;
+  margin-bottom: 2%;
+  
+}
+.projectCard:hover{
+  transform: scale(1.1);
+}
+
+.projectImg img{
+  width: 100%;
+}
+.projectImg:hover{
+  opacity: .95;
+}
+.projectInfo{
+  padding: 2% 3% 2% 3%;
+}
+.projectCategory{
+  color: #000;
+}
+.projectTitle{
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0% 0% 0%;
+  text-transform: uppercase;
+}
+.moreDetails{
+  text-decoration: none;
+  color: rgb(199, 103, 68);
+} 
+.moreDetails:hover{
+  color: rgb(14, 6, 3);
+
+} 
+
+.linkedIn a{
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.footer{
+  background-color: #3a3838;
+  
+}
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  color: rgb(199, 103, 68);
+}
+.footerCopyright{
+  font-weight: 700;
+}
+.socialIcons2{
+    width: 10%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.socialIcons2 a{
+  color: rgb(199, 103, 68);
+}
