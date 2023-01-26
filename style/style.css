@@ -15,7 +15,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 200px;
+  padding: 10px 100px;
 }
 .logo {
   text-decoration: none;
@@ -45,13 +45,13 @@ section{
   background-color: #f1e9e9;
 }
 .mainContent{
-  width: 60%;
+  width: 100%;
 }
 .position{
   display: inline-block;
   color: rgb(199, 103, 68);
   font-weight: 700;
-  font-size: 60px;
+  font-size: 45px;
   margin: 10px 0 10px 0;
 }
 .mainButton{
@@ -124,8 +124,19 @@ section{
 .info h2{
   color: rgb(199, 103, 68);
 }
-@media only screen and (max-width: 768px) {
-  .cardsContent {
+@media only screen and (max-width:768px) {
+  .projects .content{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  .projectCard{
+    background-color: red;
+    }
+  
+    .cardsContent {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -146,6 +157,7 @@ section{
   .card {
     width: 100%;
   } 
+ 
 }
 
 
@@ -234,4 +246,85 @@ section{
 }
 .socialIcons2 a{
   color: rgb(199, 103, 68);
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar a {
+    font-size: .9em;
+    padding-left: 10px;
+  }
+  section{
+    padding: 80px;
+  }
+  .mainContent h2{
+    font-size: 20px;
+  }
+  .position{
+    font-weight: 700;
+    font-size: 40px;
+    margin: 10px 0 10px 0;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .mainContent h3{
+    font-size: 15px;
+  }
+
+  .title{
+    font-size: 1.9em;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+
+  }
+  .footerCopyright{
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  header{
+    padding: 10px 40px;
+  }
+  .logo{
+    font-size: 20px;
+  }
+  .navbar a {
+    font-size: .5em;
+    padding-left: 10px;
+  }
+
+  .position{
+    font-size: 22px;
+
+  }
+  .mainContent h3{
+    font-size: 10px;
+  }
+  .socialIcons{
+    width: 25%;    
+  }
+  .socialIcons a{
+    margin-right: 5%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  header{
+    padding: 10px 50px;
+
+  }
+  .logo{
+    font-size: 15px;
+  }
+  .mainContent h2{
+    font-size: 15px;
+  }
+  .position{
+    font-size: 12px;
+
+  }
+  .socialIcons{
+    width: 25%;    
+  }
+  .socialIcons a{
+    margin-right: 5%;
+  }
 }
